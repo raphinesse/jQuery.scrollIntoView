@@ -50,7 +50,7 @@
             (pEl.scrollTop != ((pEl.scrollTop += 1) == null || pEl.scrollTop) && (pEl.scrollTop -= 1) != null) ||
             (pEl.scrollTop != ((pEl.scrollTop -= 1) == null || pEl.scrollTop) && (pEl.scrollTop += 1) != null)) {
                 if (elY < pY) scrollTo(pEl, elY - elH); // scroll up
-                else if ((elY + elH) > (pY + pH)) scrollTo(pEl, elY + elH - pH); // scroll down
+                else if ((elY + elH) > (pY + pH)) scrollTo(pEl, elY - pH); // scroll down
                 return;
             }
 
